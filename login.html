@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="jquery-3.6.1.js"></script>
+</head>
+<body>
+    <header>
+        <div id="firstHeader">
+            <div id="colorBox"></div>
+            <p class="font1 fontBold"><a href="index.html">Jang Wonjung</a></p>
+            <p class="font2">/</p>
+            <p class="font2">BACKEND DEVELOPER</p>
+        </div>
+        <div id="secondHeader">
+            <div id="nav">
+                <ul id="navList">
+                    <li id="aboutMe" class="navi">ABOUT ME</li>
+                    <li id="interests" class="navi">INTERESTS</li>
+                    <li id="projects" class="navi">PROJECTS</li>
+                    <li id="login" class="navi">LOGIN</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="firstSection">
+        </div>
+        <div id="secondSection">
+        </div>
+    </section>
+    <div id="loginBox">
+        <div id="loginContainer">
+            <div class="title">
+                <div class="dat"></div>
+                <h1>Login</h1>
+            </div>
+            <form action="" id="loginFrm">
+                <fieldset>
+                    <table id="loginTable">
+                        <tr class="inputData">
+                            <th><input type="text" id="userId" placeholder="아이디를 입력해주세요." required></th>
+                        </tr>
+                        <tr class="err" id="loginIdErr">
+                            <td></td>
+                        </tr>
+                        <tr class="inputData" id="loginPwErr">
+                            <th><input type="password" id="password" placeholder="비밀번호를 입력해주세요." required></th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th><input type="submit" value="Login" id="loginBtn"></th>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+            <div id="memberMenu">
+                <a href="javascript:openSignup();">회원가입</a><a href="">아이디 찾기</a><a href="">비밀번호 찾기</a>
+            </div>
+        </div>
+    </div>
+    <div id="signupBox">
+        <div id="signContainer">
+            <div class="title">
+                <div class="dat"></div>
+                <h1>Sign Up</h1>
+            </div>
+            <form action="" id="signupFrm">
+                <fieldset>
+                    <h3><label for="signupId">아이디<span class="requird">*</span></label></h3>
+                    <input type="text" id="signupId" name="signupId" placeholder="아이디" required>
+                    <div class="errMessage" id="idErr"></div>
+                    <h3><label for="signupPw">비밀번호<span class="requird">*</span></label></h3>
+                    <input type="password" id="signupPw" name="signupPw" placeholder="비밀번호" required>
+                    <div class="errMessage" id="pwErr"></div>
+                    <h3><label for="signupPw">비밀번호 확인<span class="requird">*</span></label></h3>
+                    <input type="password" id="signupPw-confirmation" placeholder="비밀번호 확인" required>
+                    <div class="errMessage" id="pwcErr"></div>
+                    <h3><label for="userName">이름<span class="requird">*</span></label></h3>
+                    <input type="text" id="userName" name="userName" placeholder="홍길동">
+                    <div class="errMessage" id="nameErr"></div>
+                    <h3><label for="birth">생년월일<span class="requird">*</span></label></h3>
+                    <input type="number" name="birthYear" id="birthYear" class="birthYear" placeholder="년(4자)" required>
+                    <select name="birthMonth" id="birthMonth" required>
+                        <option value="">월</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <input type="number" name="birthDay" id="birthDay" class="birthDay" placeholder="일" required>
+                    <div class="errMessage" id="birthErr"></div>
+                    <h3><label for="gender">성별</label></h3>
+                    <select name="gender" id="gender">
+                    <option value="X">선택안함</option>
+                    <option value="M">남</option>
+                    <option value="F">여</option>
+                    </select>
+                    <h3><label for="email">이메일</label></h3>
+                    <input type="email" class="email" id="email1" name="email1" placeholder="abc1234@naver.com">
+                    <h3><label for="phone">휴대폰번호<span class="requird">*</span></label></h3>
+                    <input type="text" name="tel1" id="tel1" class="phone" required>
+                    <input type="text" name="tel2" id="tel2" class="phone" required>
+                    <input type="text" name="tel3" id="tel3" class="phone" required>
+                    <div class="errMessage" id="phoneErr"></div>
+                    <input type="button" id="signupBtn" value="가 입">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id="call" class="footerBox">
+            <h3>Call</h3>
+            <div>010-9218-5331</div>
+        </div>
+        <div id="email" class="footerBox">
+            <h3>Email</h3>
+            <div>jangcccci@gamil.com</div>
+        </div>
+        <div id="sns" class="footerBox">
+            <h3>Follow</h3>
+            <div id="snsList"><img id="github" class="sns" src="images/github.png" alt=""><img id="instagram" class="sns" src="images/instagram.png" alt=""><img id="tistory" class="sns" src="images/tistory.png" alt=""></div>
+        </div>
+    </footer>
+    <script src="common.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

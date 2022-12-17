@@ -1,0 +1,134 @@
+#aboutMe{
+    color: #0050ff;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+#firstSection{
+    background-color: #e6dace;
+    width: 40%;
+    height: 100%;
+}
+
+#secondSection{
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+}
+
+#main{
+    position: fixed;
+    top: 25vh;
+    width: 100%;
+    height: 50vh;
+}
+
+#mainBox{
+    display: flex;
+    width: 800px;
+    height: 510px;
+    margin: auto;
+}
+
+#profile{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f4ece6;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+
+#profileImg{
+    background-image: url(images/mimoticon.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: gray;
+}
+
+#nameBox{
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#space{
+    width: 50px;
+    height: 30px;
+    border-bottom: 2.5px solid #0050ff;
+    margin-bottom: 30px;
+}
+
+#profile>span{
+    margin-bottom: 30px;
+}
+
+#snsBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+}
+
+.snsImg{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#introduce{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+#hello{
+    font-size: 100px;
+    font-weight: bolder;
+    margin: 0 0 25px 0;
+}
+
+#iAm{
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+#menuBox>a{
+    border: 2px solid #0050ff;
+    background-color: #0050ff;
+    margin-right: 30px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+#menuBox>a>span{
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+}
+
+#introBox{
+    width: 100%;
+    height: 40%;
+    margin-top: 35px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.marker{
+    border-bottom: 2px solid #0050ff;
+}

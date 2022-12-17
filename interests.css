@@ -1,0 +1,104 @@
+#interests{
+    color: #0050ff;
+}
+
+section{
+    width: 100%;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #e6dace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+#interestsTitle{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+#dat{
+    width: 20px;
+    height: 20px;
+    background-color: #0050ff;
+    margin-right: 10px;
+}
+
+#favoriteMovie{
+    width: 900px;
+    height: 460px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    overflow-x: scroll;
+}
+
+.fav{
+    width: 900px;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+#movieConveyer{
+    background-color: #f4ece6;
+    width: 3670px;
+    height: 460px;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 420px;
+    margin: 0 3px;
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+
+.movieInner, .review{
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    padding: 10px;
+    background-color: #fff;
+    backface-visibility: hidden;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.review{
+    transform: rotateY(180deg);
+}
+
+.review>p{
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.movieInner img{
+    width: 280px;
+    height: 400px;
+}
+
+#favoriteMusic{
+    background-color: #f4ece6;
+    width: 900px;
+    height: 460px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+
+#musicDisplay{
+    width: 900px;
+    height: 440px;
+}
+
+#resumeTitle>h1{
+    font-size: 40px;
+}

@@ -1,0 +1,91 @@
+#projects{
+    color: #0050ff;
+}
+
+section{
+    width: 100%;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #e6dace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+#projectsTitle{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+#dat{
+    width: 20px;
+    height: 20px;
+    background-color: #0050ff;
+    margin-right: 10px;
+}
+
+.projectBox{
+    width: 900px;
+    height: 460px;
+    display: flex;
+    margin: 50px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+
+.projectComent{
+    width: 540px;
+    height: 460px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.projectTitleBox{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+}
+
+.projectTitleBox>div.blue{
+    background-color: #0050ff;
+    width: 10px;
+    height: 100%;
+}
+
+.projectTitle{
+    height: 100%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.projectName{
+    margin: 3px 0 0 0;
+    color: #0050ff;
+    font-weight: 800;
+}
+
+.roleTitle{
+    margin: 0;
+    font-weight: 600;
+}
+
+.projectContents{
+    width: 100%;
+    height: 360px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#semiProjectImg{
+    width: 360px;
+    height: 460px;
+    background-color: #0050ff;
+}
+
